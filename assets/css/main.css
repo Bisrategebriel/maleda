@@ -540,7 +540,7 @@ section {
   }
 
   .mobile-nav-show {
-    color: #fff;
+    color: var(--color-secondary);
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
@@ -2095,7 +2095,7 @@ Call to Action Banner Two Section
   /* background: linear-gradient(from right, var(--color-secondary)); */
   /* I want to add a gradient to cover the image below*/
   background-color: var(--color-secondary);
-  background-image: url("../img/maleda/flipped-banner.png");
+  background-image: url("../img/maleda/home-banner.png");
   background-size: cover;
   background-position: top;
   position: relative;
