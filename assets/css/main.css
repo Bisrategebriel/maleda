@@ -1798,6 +1798,75 @@ Call to Action Banner Two Section
   background: var(--color-tertiary);
 }
 
+
+.download-the-apps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-the-apps .download-btn-wrap {
+  margin-top: 2rem;
+}
+
+.drivers-perks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drivers-perks p {
+  font-size: 1.1rem;
+}
+
+.single-driver-perk {
+  width: 18rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.single-driver-perk h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.single-driver-perk p {
+  font-size: 1rem;
+}
+
+.single-driver-perk div img {
+  width: 50%;
+}
+
+.driver-app-feature-card {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.driver-single-feature {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.driver-single-feature div {
+  background: var(--color-primary);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.driver-single-feature p {
+  margin: 0;
+}
+
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
