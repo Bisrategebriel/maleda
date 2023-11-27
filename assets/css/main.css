@@ -19,8 +19,9 @@
   scroll-behavior: smooth;
 }
 
-* {
-  
+::selection {
+  background: var(--color-primary);
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1688,6 +1689,10 @@ Call to Action Banner Two Section
   height: 100%;
 }
 
+.driver-apply img {
+  transform: scaleX(-1);
+}
+
 @media (max-width: 575px) {
   .apply-to-drive .php-email-form {
     padding: 20px;
@@ -1764,7 +1769,12 @@ Call to Action Banner Two Section
 
 .apply-to-drive .php-email-form input:focus,
 .apply-to-drive .php-email-form textarea:focus {
-  border-color: var(--color-primary);
+  border-color: var(--color-primary) !important;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--color-primary) !important;
 }
 
 .apply-to-drive .php-email-form input {
@@ -1785,7 +1795,7 @@ Call to Action Banner Two Section
 }
 
 .apply-to-drive .php-email-form button[type=submit]:hover {
-  background: rgba(13, 66, 255, 0.8);
+  background: var(--color-tertiary);
 }
 
 @keyframes animate-loading {
@@ -1831,7 +1841,7 @@ Call to Action Banner Two Section
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
-  color: rgba(14, 29, 52, 0.8);
+  color: #0e1d34cc;
 }
 
 .contact .php-email-form {
@@ -1909,7 +1919,26 @@ Call to Action Banner Two Section
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(13, 66, 255, 0.8);
+  background: var(--color-tertiary);
+}
+
+.contact .email-info a:hover {
+  color: var(--color-tertiary);
+}
+
+.contact .email-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.contact .email-info span {
+  font-weight: 600;
+}
+
+.call-info a {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 @keyframes animate-loading {
